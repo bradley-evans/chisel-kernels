@@ -1,0 +1,23 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/chisel-kernels_2.11-0.0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/VecAdd$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/VecAdd$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/Adder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/Adder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/VecAdd.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/VecAdd.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/VecAdd$$anonfun$1$$anonfun$apply$mcV$sp$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/VecAdd$$anonfun$1$$anonfun$apply$mcV$sp$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/VecAdd$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/VecAdd$$anon$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/VecAdd$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/VecAdd$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/Adder$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/Adder$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	kernels/VecAdd$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/brad/ChiselProjects/chisel-kernel/target/scala-2.11/classes/kernels/VecAdd$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
