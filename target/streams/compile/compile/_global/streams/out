@@ -1,4 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/brad/ChiselProjects/chisel-kernel/src/main/scala/VecAdd/VecAdd.scala:29:13: value update is not a member of chisel3.core.Vec[chisel3.core.UInt][0m
-[0m[[0m[31merror[0m] [0m[0m        io.C(i)(j) = io.A(i)(j) + io.B(i)(j)[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/brad/ChiselProjects/chisel-kernel/src/main/scala/VecAdd/VecAdd.scala:22:18: too many arguments for method apply: (source: T)(implicit compileOptions: chisel3.core.CompileOptions)T in object Input[0m
+[0m[[0m[31merror[0m] [0m[0m    val A = Input(m*n, UInt(w.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/brad/ChiselProjects/chisel-kernel/src/main/scala/VecAdd/VecAdd.scala:23:18: too many arguments for method apply: (source: T)(implicit compileOptions: chisel3.core.CompileOptions)T in object Input[0m
+[0m[[0m[31merror[0m] [0m[0m    val B = Input(m*n, UInt(w.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/brad/ChiselProjects/chisel-kernel/src/main/scala/VecAdd/VecAdd.scala:24:19: too many arguments for method apply: (source: T)(implicit compileOptions: chisel3.core.CompileOptions)T in object Output[0m
+[0m[[0m[31merror[0m] [0m[0m    val C = Output(m*n, UInt(w.W))[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

@@ -2,32 +2,26 @@ package kernels
 
 import chisel3._
 
-class Adder(val w: Int) extends Module {
-  // Simple adder with parameterized width.
-  // Width of adder given by parameter w.
-  val io = IO(new Bundle {
-    val in0 = Input(UInt(w.W))
-    val in1 = Input(UInt(w.W))
-    val out = Output(UInt(w.W))
-  })
-  io.out := io.in0 + io.in1
-}
-
 class VecAdd(val n: Int, val m: Int, val w: Int) extends Module {
   // Vector add module.
   // Adds vectors of width n, height m (nxm)
+  // Since CHISEL doesn't support matrix operations, we read the
+  // matrix as a vector of length m * n.
   val io = IO(new Bundle {
-    val A = Input(Vec(m, Vec(n, UInt(w.W))))
-    val B = Input(Vec(m, Vec(n, UInt(w.W))))
-    val C = Output(Vec(m, Vec(n, UInt(w.W))))
+    val A = Input(Vec(m*n, UInt(w.W)))
+    val B = Input(Vec(m*n, UInt(w.W)))
+    val C = Output(Vec(m*n, UInt(w.W)))
     val load = Input(Bool())
     val valid = Output(Bool())
   })
-  when (io.load) {
+  when (io.load) { 
     for (i <- 0 until m) {
       for (j <- 0 until n) {
-        io.C(i)(j) := io.A(i)(j) + io.B(i)(j)
+        io.C( i*n + j ) := io.A( i*n + j ) + io.B( i*n + j )
       }
     }
+    io.valid := true.B
+  } .otherwise {
+    io.valid := false.B
   }
 }
