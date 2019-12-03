@@ -26,6 +26,7 @@ class ConvolutionKernel(val m: Int,
   })
   var ans = UInt((w*2).W)
   when (io.load) { 
+    ans = 0.U
     for (i <- 0 until m*n) {
       ans = ans + io.in(i) * io.kernel(i)
     }

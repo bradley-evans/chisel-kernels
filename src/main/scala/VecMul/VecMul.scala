@@ -35,14 +35,11 @@ class VecMul(
     ans += 0.U
   }
   when (io.load) { 
-    // ************************
-    // TODO: matrix multiply implementation
-    // ************************
     for (i <- 0 until m) {
       for (j <- 0 until p) {
         sum = 0.U
         for (k <- 0 until n) {
-          sum = sum + io.A(i*n+k) * io.B(i*p+j)
+          sum = sum + io.A(i*n+k) * io.B(k*p+j)
         }
         ans(i*p+j) = sum
       }
