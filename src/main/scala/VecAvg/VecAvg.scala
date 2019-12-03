@@ -25,6 +25,7 @@ class VecAvg(val m: Int, val w: Int) extends Module {
   })
   var ans = UInt((w*2).W)
   when (io.load) { 
+    ans = 0.U
     for (i <- 0 until m * m) {
       ans = ans + io.A(i)
     }
