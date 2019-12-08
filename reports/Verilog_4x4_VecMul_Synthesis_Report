@@ -1,0 +1,287 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Dec  8 10:42:24 2019
+# Process ID: 10649
+# Current directory: /home/brad/vivado-projects/verilog_vecmul/verilog_vecmul.runs/synth_1
+# Command line: vivado -log mat_mult.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mat_mult.tcl
+# Log file: /home/brad/vivado-projects/verilog_vecmul/verilog_vecmul.runs/synth_1/mat_mult.vds
+# Journal file: /home/brad/vivado-projects/verilog_vecmul/verilog_vecmul.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source mat_mult.tcl -notrace
+Command: synth_design -top mat_mult -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10676 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.922 ; gain = 64.996 ; free physical = 1277 ; free virtual = 2929
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mat_mult' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/mat_mult.v:8]
+    Parameter WIDTH_A_80 bound to: 9 - type: integer 
+    Parameter WIDTH_B_80 bound to: 8 - type: integer 
+    Parameter WIDTH_PROD bound to: 17 - type: integer 
+    Parameter WIDTH_PROD_ROUNDED bound to: 9 - type: integer 
+    Parameter WIDTH_SUM bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mult' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/mult_bb.v:34]
+INFO: [Synth 8-256] done synthesizing module 'mult' (1#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/mult_bb.v:34]
+INFO: [Synth 8-638] synthesizing module 'rounding_logic' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/rounding.v:8]
+    Parameter WIDTH_PROD bound to: 17 - type: integer 
+    Parameter WIDTH_PROD_ROUNDED bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'rounding_logic' (2#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/rounding.v:8]
+INFO: [Synth 8-638] synthesizing module 'add' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/add_bb.v:34]
+INFO: [Synth 8-256] done synthesizing module 'add' (3#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/add_bb.v:34]
+INFO: [Synth 8-638] synthesizing module 'saturation_logic' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/saturation.v:8]
+    Parameter WIDTH_SUM bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'saturation_logic' (4#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/saturation.v:8]
+INFO: [Synth 8-638] synthesizing module 'd_ff' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/dff.v:8]
+    Parameter REG_SIZE bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_ff' (5#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/dff.v:8]
+INFO: [Synth 8-256] done synthesizing module 'mat_mult' (6#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/Matrix-Multiplication/src/mat_mult.v:8]
+WARNING: [Synth 8-3331] design rounding_logic has unconnected port prod_80[5]
+WARNING: [Synth 8-3331] design rounding_logic has unconnected port prod_80[4]
+WARNING: [Synth 8-3331] design rounding_logic has unconnected port prod_80[3]
+WARNING: [Synth 8-3331] design rounding_logic has unconnected port prod_80[2]
+WARNING: [Synth 8-3331] design rounding_logic has unconnected port prod_80[1]
+WARNING: [Synth 8-3331] design rounding_logic has unconnected port prod_80[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1287 ; free virtual = 2939
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1287 ; free virtual = 2939
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1210.426 ; gain = 113.500 ; free physical = 1287 ; free virtual = 2939
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1226.441 ; gain = 129.516 ; free physical = 1276 ; free virtual = 2930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+       2 Input     11 Bit       Adders := 3     
+       2 Input      9 Bit       Adders := 8     
+       2 Input      8 Bit       Adders := 4     
++---Registers : 
+                   11 Bit    Registers := 1     
++---Muxes : 
+       4 Input     11 Bit        Muxes := 3     
+       2 Input      9 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mat_mult 
+Detailed RTL Component Info : 
++---Adders : 
+       2 Input      9 Bit       Adders := 4     
+       2 Input      8 Bit       Adders := 4     
+Module rounding_logic 
+Detailed RTL Component Info : 
++---Adders : 
+       2 Input      9 Bit       Adders := 1     
++---Muxes : 
+       2 Input      9 Bit        Muxes := 3     
+Module saturation_logic 
+Detailed RTL Component Info : 
++---Adders : 
+       2 Input     11 Bit       Adders := 1     
++---Muxes : 
+       4 Input     11 Bit        Muxes := 1     
+Module d_ff 
+Detailed RTL Component Info : 
++---Registers : 
+                   11 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1121 ; free virtual = 2792
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1122 ; free virtual = 2793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mult          |         4|
+|2     |add           |         3|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |add     |     1|
+|2     |add__1  |     1|
+|3     |add__2  |     1|
+|4     |mult    |     1|
+|5     |mult__1 |     1|
+|6     |mult__2 |     1|
+|7     |mult__3 |     1|
+|8     |BUFG    |     1|
+|9     |CARRY4  |     9|
+|10    |LUT1    |    30|
+|11    |LUT2    |     3|
+|12    |LUT3    |    37|
+|13    |LUT4    |    16|
+|14    |LUT5    |    11|
+|15    |LUT6    |    47|
+|16    |FDCE    |    11|
+|17    |IBUF    |    70|
+|18    |OBUF    |    11|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   353|
+|2     |  D0     |d_ff   |    22|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1120 ; free virtual = 2791
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.543 ; gain = 231.617 ; free physical = 1123 ; free virtual = 2794
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1328.551 ; gain = 231.617 ; free physical = 1123 ; free virtual = 2794
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1428.555 ; gain = 344.215 ; free physical = 1056 ; free virtual = 2737
+INFO: [Common 17-1381] The checkpoint '/home/brad/vivado-projects/verilog_vecmul/verilog_vecmul.runs/synth_1/mat_mult.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1452.566 ; gain = 0.000 ; free physical = 1055 ; free virtual = 2736
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 10:42:51 2019...
