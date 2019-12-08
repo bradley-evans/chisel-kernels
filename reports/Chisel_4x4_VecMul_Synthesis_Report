@@ -1,0 +1,480 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Dec  7 23:23:01 2019
+# Process ID: 31402
+# Current directory: /home/brad/vivado-projects/project_1/project_1.runs/synth_1
+# Command line: vivado -log VecMul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VecMul.tcl
+# Log file: /home/brad/vivado-projects/project_1/project_1.runs/synth_1/VecMul.vds
+# Journal file: /home/brad/vivado-projects/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source VecMul.tcl -notrace
+Command: synth_design -top VecMul -part xc7z030ifbv676-2L -flatten_hierarchy none -directive AreaMultThresholdDSP
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030i-fbv676'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030i-fbv676'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31421 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.922 ; gain = 64.996 ; free physical = 1346 ; free virtual = 2653
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VecMul' [/home/brad/ChiselProjects/chisel-kernel/VecMul.v:1]
+INFO: [Synth 8-256] done synthesizing module 'VecMul' (1#1) [/home/brad/ChiselProjects/chisel-kernel/VecMul.v:1]
+WARNING: [Synth 8-3331] design VecMul has unconnected port clock
+WARNING: [Synth 8-3331] design VecMul has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1353 ; free virtual = 2660
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1354 ; free virtual = 2661
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z030ifbv676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/brad/vivado-projects/project_1/project_1.srcs/constrs_1/new/defaut.xdc]
+Finished Parsing XDC File [/home/brad/vivado-projects/project_1/project_1.srcs/constrs_1/new/defaut.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1542.805 ; gain = 0.000 ; free physical = 1098 ; free virtual = 2405
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1542.805 ; gain = 445.879 ; free physical = 1166 ; free virtual = 2473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030ifbv676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1542.805 ; gain = 445.879 ; free physical = 1166 ; free virtual = 2473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1542.805 ; gain = 445.879 ; free physical = 1168 ; free virtual = 2475
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1542.805 ; gain = 445.879 ; free physical = 1170 ; free virtual = 2477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP _T_162, operation Mode is: A*B.
+DSP Report: operator _T_162 is absorbed into DSP _T_162.
+DSP Report: Generating DSP ans_0, operation Mode is: C+A*B.
+DSP Report: operator ans_0 is absorbed into DSP ans_0.
+DSP Report: operator _T_153 is absorbed into DSP ans_0.
+DSP Report: Generating DSP ans_0, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_0 is absorbed into DSP ans_0.
+DSP Report: operator _T_159 is absorbed into DSP ans_0.
+DSP Report: Generating DSP ans_0, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_0 is absorbed into DSP ans_0.
+DSP Report: operator _T_156 is absorbed into DSP ans_0.
+DSP Report: Generating DSP _T_174, operation Mode is: A*B.
+DSP Report: operator _T_174 is absorbed into DSP _T_174.
+DSP Report: Generating DSP ans_1, operation Mode is: C+A*B.
+DSP Report: operator ans_1 is absorbed into DSP ans_1.
+DSP Report: operator _T_165 is absorbed into DSP ans_1.
+DSP Report: Generating DSP ans_1, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_1 is absorbed into DSP ans_1.
+DSP Report: operator _T_171 is absorbed into DSP ans_1.
+DSP Report: Generating DSP ans_1, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_1 is absorbed into DSP ans_1.
+DSP Report: operator _T_168 is absorbed into DSP ans_1.
+DSP Report: Generating DSP _T_186, operation Mode is: A*B.
+DSP Report: operator _T_186 is absorbed into DSP _T_186.
+DSP Report: Generating DSP ans_2, operation Mode is: C+A*B.
+DSP Report: operator ans_2 is absorbed into DSP ans_2.
+DSP Report: operator _T_177 is absorbed into DSP ans_2.
+DSP Report: Generating DSP ans_2, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_2 is absorbed into DSP ans_2.
+DSP Report: operator _T_183 is absorbed into DSP ans_2.
+DSP Report: Generating DSP ans_2, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_2 is absorbed into DSP ans_2.
+DSP Report: operator _T_180 is absorbed into DSP ans_2.
+DSP Report: Generating DSP _T_198, operation Mode is: A*B.
+DSP Report: operator _T_198 is absorbed into DSP _T_198.
+DSP Report: Generating DSP ans_3, operation Mode is: C+A*B.
+DSP Report: operator ans_3 is absorbed into DSP ans_3.
+DSP Report: operator _T_189 is absorbed into DSP ans_3.
+DSP Report: Generating DSP ans_3, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_3 is absorbed into DSP ans_3.
+DSP Report: operator _T_195 is absorbed into DSP ans_3.
+DSP Report: Generating DSP ans_3, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_3 is absorbed into DSP ans_3.
+DSP Report: operator _T_192 is absorbed into DSP ans_3.
+DSP Report: Generating DSP _T_210, operation Mode is: A*B.
+DSP Report: operator _T_210 is absorbed into DSP _T_210.
+DSP Report: Generating DSP ans_4, operation Mode is: C+A*B.
+DSP Report: operator ans_4 is absorbed into DSP ans_4.
+DSP Report: operator _T_201 is absorbed into DSP ans_4.
+DSP Report: Generating DSP ans_4, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_4 is absorbed into DSP ans_4.
+DSP Report: operator _T_207 is absorbed into DSP ans_4.
+DSP Report: Generating DSP ans_4, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_4 is absorbed into DSP ans_4.
+DSP Report: operator _T_204 is absorbed into DSP ans_4.
+DSP Report: Generating DSP _T_222, operation Mode is: A*B.
+DSP Report: operator _T_222 is absorbed into DSP _T_222.
+DSP Report: Generating DSP ans_5, operation Mode is: C+A*B.
+DSP Report: operator ans_5 is absorbed into DSP ans_5.
+DSP Report: operator _T_213 is absorbed into DSP ans_5.
+DSP Report: Generating DSP ans_5, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_5 is absorbed into DSP ans_5.
+DSP Report: operator _T_219 is absorbed into DSP ans_5.
+DSP Report: Generating DSP ans_5, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_5 is absorbed into DSP ans_5.
+DSP Report: operator _T_216 is absorbed into DSP ans_5.
+DSP Report: Generating DSP _T_234, operation Mode is: A*B.
+DSP Report: operator _T_234 is absorbed into DSP _T_234.
+DSP Report: Generating DSP ans_6, operation Mode is: C+A*B.
+DSP Report: operator ans_6 is absorbed into DSP ans_6.
+DSP Report: operator _T_225 is absorbed into DSP ans_6.
+DSP Report: Generating DSP ans_6, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_6 is absorbed into DSP ans_6.
+DSP Report: operator _T_231 is absorbed into DSP ans_6.
+DSP Report: Generating DSP ans_6, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_6 is absorbed into DSP ans_6.
+DSP Report: operator _T_228 is absorbed into DSP ans_6.
+DSP Report: Generating DSP _T_246, operation Mode is: A*B.
+DSP Report: operator _T_246 is absorbed into DSP _T_246.
+DSP Report: Generating DSP ans_7, operation Mode is: C+A*B.
+DSP Report: operator ans_7 is absorbed into DSP ans_7.
+DSP Report: operator _T_237 is absorbed into DSP ans_7.
+DSP Report: Generating DSP ans_7, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_7 is absorbed into DSP ans_7.
+DSP Report: operator _T_243 is absorbed into DSP ans_7.
+DSP Report: Generating DSP ans_7, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_7 is absorbed into DSP ans_7.
+DSP Report: operator _T_240 is absorbed into DSP ans_7.
+DSP Report: Generating DSP _T_258, operation Mode is: A*B.
+DSP Report: operator _T_258 is absorbed into DSP _T_258.
+DSP Report: Generating DSP ans_8, operation Mode is: C+A*B.
+DSP Report: operator ans_8 is absorbed into DSP ans_8.
+DSP Report: operator _T_249 is absorbed into DSP ans_8.
+DSP Report: Generating DSP ans_8, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_8 is absorbed into DSP ans_8.
+DSP Report: operator _T_255 is absorbed into DSP ans_8.
+DSP Report: Generating DSP ans_8, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_8 is absorbed into DSP ans_8.
+DSP Report: operator _T_252 is absorbed into DSP ans_8.
+DSP Report: Generating DSP _T_270, operation Mode is: A*B.
+DSP Report: operator _T_270 is absorbed into DSP _T_270.
+DSP Report: Generating DSP ans_9, operation Mode is: C+A*B.
+DSP Report: operator ans_9 is absorbed into DSP ans_9.
+DSP Report: operator _T_261 is absorbed into DSP ans_9.
+DSP Report: Generating DSP ans_9, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_9 is absorbed into DSP ans_9.
+DSP Report: operator _T_267 is absorbed into DSP ans_9.
+DSP Report: Generating DSP ans_9, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_9 is absorbed into DSP ans_9.
+DSP Report: operator _T_264 is absorbed into DSP ans_9.
+DSP Report: Generating DSP _T_282, operation Mode is: A*B.
+DSP Report: operator _T_282 is absorbed into DSP _T_282.
+DSP Report: Generating DSP ans_10, operation Mode is: C+A*B.
+DSP Report: operator ans_10 is absorbed into DSP ans_10.
+DSP Report: operator _T_273 is absorbed into DSP ans_10.
+DSP Report: Generating DSP ans_10, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_10 is absorbed into DSP ans_10.
+DSP Report: operator _T_279 is absorbed into DSP ans_10.
+DSP Report: Generating DSP ans_10, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_10 is absorbed into DSP ans_10.
+DSP Report: operator _T_276 is absorbed into DSP ans_10.
+DSP Report: Generating DSP _T_294, operation Mode is: A*B.
+DSP Report: operator _T_294 is absorbed into DSP _T_294.
+DSP Report: Generating DSP ans_11, operation Mode is: C+A*B.
+DSP Report: operator ans_11 is absorbed into DSP ans_11.
+DSP Report: operator _T_285 is absorbed into DSP ans_11.
+DSP Report: Generating DSP ans_11, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_11 is absorbed into DSP ans_11.
+DSP Report: operator _T_291 is absorbed into DSP ans_11.
+DSP Report: Generating DSP ans_11, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_11 is absorbed into DSP ans_11.
+DSP Report: operator _T_288 is absorbed into DSP ans_11.
+DSP Report: Generating DSP _T_306, operation Mode is: A*B.
+DSP Report: operator _T_306 is absorbed into DSP _T_306.
+DSP Report: Generating DSP ans_12, operation Mode is: C+A*B.
+DSP Report: operator ans_12 is absorbed into DSP ans_12.
+DSP Report: operator _T_297 is absorbed into DSP ans_12.
+DSP Report: Generating DSP ans_12, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_12 is absorbed into DSP ans_12.
+DSP Report: operator _T_303 is absorbed into DSP ans_12.
+DSP Report: Generating DSP ans_12, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_12 is absorbed into DSP ans_12.
+DSP Report: operator _T_300 is absorbed into DSP ans_12.
+DSP Report: Generating DSP _T_318, operation Mode is: A*B.
+DSP Report: operator _T_318 is absorbed into DSP _T_318.
+DSP Report: Generating DSP ans_13, operation Mode is: C+A*B.
+DSP Report: operator ans_13 is absorbed into DSP ans_13.
+DSP Report: operator _T_309 is absorbed into DSP ans_13.
+DSP Report: Generating DSP ans_13, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_13 is absorbed into DSP ans_13.
+DSP Report: operator _T_315 is absorbed into DSP ans_13.
+DSP Report: Generating DSP ans_13, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_13 is absorbed into DSP ans_13.
+DSP Report: operator _T_312 is absorbed into DSP ans_13.
+DSP Report: Generating DSP _T_330, operation Mode is: A*B.
+DSP Report: operator _T_330 is absorbed into DSP _T_330.
+DSP Report: Generating DSP ans_14, operation Mode is: C+A*B.
+DSP Report: operator ans_14 is absorbed into DSP ans_14.
+DSP Report: operator _T_321 is absorbed into DSP ans_14.
+DSP Report: Generating DSP ans_14, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_14 is absorbed into DSP ans_14.
+DSP Report: operator _T_327 is absorbed into DSP ans_14.
+DSP Report: Generating DSP ans_14, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_14 is absorbed into DSP ans_14.
+DSP Report: operator _T_324 is absorbed into DSP ans_14.
+DSP Report: Generating DSP _T_342, operation Mode is: A*B.
+DSP Report: operator _T_342 is absorbed into DSP _T_342.
+DSP Report: Generating DSP ans_15, operation Mode is: C+A*B.
+DSP Report: operator ans_15 is absorbed into DSP ans_15.
+DSP Report: operator _T_333 is absorbed into DSP ans_15.
+DSP Report: Generating DSP ans_15, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_15 is absorbed into DSP ans_15.
+DSP Report: operator _T_339 is absorbed into DSP ans_15.
+DSP Report: Generating DSP ans_15, operation Mode is: PCIN+A*B.
+DSP Report: operator ans_15 is absorbed into DSP ans_15.
+DSP Report: operator _T_336 is absorbed into DSP ans_15.
+WARNING: [Synth 8-3331] design VecMul has unconnected port clock
+WARNING: [Synth 8-3331] design VecMul has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1542.805 ; gain = 445.879 ; free physical = 1146 ; free virtual = 2453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | C+A*B       | 16     | 16     | 16     | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VecMul      | PCIN+A*B    | 16     | 16     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1561.805 ; gain = 464.879 ; free physical = 984 ; free virtual = 2291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1562.805 ; gain = 465.879 ; free physical = 984 ; free virtual = 2291
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1573.828 ; gain = 476.902 ; free physical = 982 ; free virtual = 2289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1573.828 ; gain = 476.902 ; free physical = 981 ; free virtual = 2288
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1573.828 ; gain = 476.902 ; free physical = 981 ; free virtual = 2288
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1573.828 ; gain = 476.902 ; free physical = 983 ; free virtual = 2291
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |DSP48E1   |    48|
+|2     |DSP48E1_1 |    16|
+|3     |IBUF      |   513|
+|4     |OBUF      |   257|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   834|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1573.828 ; gain = 476.902 ; free physical = 983 ; free virtual = 2291
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1573.828 ; gain = 136.520 ; free physical = 1048 ; free virtual = 2355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1573.836 ; gain = 476.902 ; free physical = 1050 ; free virtual = 2357
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 577 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+12 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1573.836 ; gain = 489.496 ; free physical = 1020 ; free virtual = 2327
+INFO: [Common 17-1381] The checkpoint '/home/brad/vivado-projects/project_1/project_1.runs/synth_1/VecMul.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1573.836 ; gain = 0.000 ; free physical = 1024 ; free virtual = 2331
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 23:23:50 2019...
