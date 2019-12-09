@@ -3,3 +3,4 @@ target/*
 test_run_dir/*
 VecMul.anno.json
 _temphelper.scala
+*vivado*
