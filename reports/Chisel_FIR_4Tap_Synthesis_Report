@@ -1,0 +1,240 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sun Dec  8 21:45:54 2019
+# Process ID: 28022
+# Current directory: /home/brad/vivado-projects/chisel_fir4tap/chisel_fir4tap.runs/synth_1
+# Command line: vivado -log FirFilter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FirFilter.tcl
+# Log file: /home/brad/vivado-projects/chisel_fir4tap/chisel_fir4tap.runs/synth_1/FirFilter.vds
+# Journal file: /home/brad/vivado-projects/chisel_fir4tap/chisel_fir4tap.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source FirFilter.tcl -notrace
+Command: synth_design -top FirFilter -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28040 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.922 ; gain = 64.996 ; free physical = 1284 ; free virtual = 2631
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FirFilter' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:1]
+INFO: [Synth 8-256] done synthesizing module 'FirFilter' (1#1) [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:1]
+WARNING: [Synth 8-3331] design FirFilter has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1295 ; free virtual = 2642
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1294 ; free virtual = 2641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1210.426 ; gain = 113.500 ; free physical = 1294 ; free virtual = 2641
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+WARNING: [Synth 8-6014] Unused sequential element zs_1_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:33]
+WARNING: [Synth 8-6014] Unused sequential element zs_2_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:34]
+WARNING: [Synth 8-6014] Unused sequential element zs_3_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:35]
+WARNING: [Synth 8-6014] Unused sequential element zs_0_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.434 ; gain = 121.508 ; free physical = 1293 ; free virtual = 2641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+                    8 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FirFilter 
+Detailed RTL Component Info : 
++---Registers : 
+                    8 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'zs_0_reg[7:0]' into 'zs_0_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:32]
+WARNING: [Synth 8-6014] Unused sequential element zs_0_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:32]
+INFO: [Synth 8-4471] merging register 'zs_1_reg[7:0]' into 'zs_1_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:33]
+WARNING: [Synth 8-6014] Unused sequential element zs_1_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter.v:33]
+WARNING: [Synth 8-3331] design FirFilter has unconnected port reset
+WARNING: [Synth 8-3332] Sequential element (zs_3_reg[7]) is unused and will be removed from module FirFilter.
+WARNING: [Synth 8-3332] Sequential element (zs_3_reg[6]) is unused and will be removed from module FirFilter.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1148 ; free virtual = 2496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     3|
+|4     |LUT2   |    15|
+|5     |LUT3   |     4|
+|6     |LUT4   |     5|
+|7     |LUT5   |     4|
+|8     |LUT6   |     3|
+|9     |FDRE   |    30|
+|10    |IBUF   |     9|
+|11    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    90|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1147 ; free virtual = 2495
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.559 ; gain = 232.633 ; free physical = 1149 ; free virtual = 2497
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.566 ; gain = 232.633 ; free physical = 1149 ; free virtual = 2497
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+12 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1402.559 ; gain = 318.219 ; free physical = 1095 ; free virtual = 2443
+INFO: [Common 17-1381] The checkpoint '/home/brad/vivado-projects/chisel_fir4tap/chisel_fir4tap.runs/synth_1/FirFilter.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1426.570 ; gain = 0.000 ; free physical = 1094 ; free virtual = 2443
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 21:46:20 2019...
