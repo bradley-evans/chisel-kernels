@@ -3,3 +3,5 @@ target/*
 test_run_dir/*
 VecMul.anno.json
 _temphelper.scala
+*vivado*
+.Xil/Vivado-6621-artificer
