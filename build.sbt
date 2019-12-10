@@ -40,11 +40,20 @@ scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-language:refle
 // The following are the current "release" versions.
 val defaultVersions = Map(
   "chisel3" -> "3.1.+",
-  "chisel-iotesters" -> "1.2.+"
+  "chisel-iotesters" -> "1.2.+",
+  "dsptools" -> "1.1.8"
   )
 
 libraryDependencies ++= (Seq("chisel3","chisel-iotesters").map {
   dep: String => "edu.berkeley.cs" %% dep % sys.props.getOrElse(dep + "Version", defaultVersions(dep)) })
+
+libraryDependencies ++= Seq(
+  "org.scalanlp" %% "breeze" % "0.13.2",
+  "org.scalanlp" %% "breeze-natives" % "0.13.2",
+  "org.scalanlp" %% "breeze-viz" % "0.13.2"
+)
+
+libraryDependencies += "edu.berkeley.cs" %% "dsptools" % "1.1.8"
 
 resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots"),
