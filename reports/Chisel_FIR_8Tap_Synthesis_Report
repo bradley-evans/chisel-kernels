@@ -1,0 +1,357 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Dec  9 23:08:22 2019
+# Process ID: 2075
+# Current directory: /home/brad/vivado-projects/chisel_fir8tap/chisel_fir8tap.runs/synth_1
+# Command line: vivado -log FirFilter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FirFilter.tcl
+# Log file: /home/brad/vivado-projects/chisel_fir8tap/chisel_fir8tap.runs/synth_1/FirFilter.vds
+# Journal file: /home/brad/vivado-projects/chisel_fir8tap/chisel_fir8tap.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source FirFilter.tcl -notrace
+Command: synth_design -top FirFilter -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2093 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.926 ; gain = 64.996 ; free physical = 993 ; free virtual = 2661
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FirFilter' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:1]
+INFO: [Synth 8-256] done synthesizing module 'FirFilter' (1#1) [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:1]
+WARNING: [Synth 8-3331] design FirFilter has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.426 ; gain = 105.496 ; free physical = 1004 ; free virtual = 2672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.426 ; gain = 105.496 ; free physical = 1004 ; free virtual = 2673
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1210.430 ; gain = 113.500 ; free physical = 1004 ; free virtual = 2673
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+WARNING: [Synth 8-6014] Unused sequential element zs_7_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:67]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.438 ; gain = 121.508 ; free physical = 1000 ; free virtual = 2668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+                   18 Bit    Registers := 2     
+                    8 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FirFilter 
+Detailed RTL Component Info : 
++---Registers : 
+                   18 Bit    Registers := 2     
+                    8 Bit    Registers := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'zs_0_reg[7:0]' into 'zs_0_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:60]
+INFO: [Synth 8-4471] merging register 'zs_0_reg[7:0]' into 'zs_0_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:60]
+INFO: [Synth 8-4471] merging register 'zs_1_reg[7:0]' into 'zs_1_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:61]
+INFO: [Synth 8-4471] merging register 'zs_2_reg[7:0]' into 'zs_2_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:62]
+INFO: [Synth 8-4471] merging register 'zs_1_reg[7:0]' into 'zs_1_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:61]
+WARNING: [Synth 8-6014] Unused sequential element zs_0_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:60]
+WARNING: [Synth 8-6014] Unused sequential element zs_0_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:60]
+WARNING: [Synth 8-6014] Unused sequential element zs_1_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:61]
+WARNING: [Synth 8-6014] Unused sequential element zs_2_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:62]
+WARNING: [Synth 8-6014] Unused sequential element zs_1_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:61]
+INFO: [Synth 8-4471] merging register 'zs_3_reg[7:0]' into 'zs_3_reg[7:0]' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:63]
+WARNING: [Synth 8-6014] Unused sequential element zs_3_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:63]
+WARNING: [Synth 8-6014] Unused sequential element C was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/FirFilter_8Tap.v:71]
+WARNING: [Synth 8-3331] design FirFilter has unconnected port reset
+INFO: [Synth 8-3886] merging instance 'zs_3_reg[6]' (FD) to 'B[6]__2'
+INFO: [Synth 8-3886] merging instance 'A[0]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[1]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[2]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[3]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[4]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[5]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[6]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[7]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[8]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[9]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[10]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[11]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[12]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[13]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[14]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[15]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[16]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[17]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[18]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[19]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[20]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[21]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[22]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[23]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[24]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[25]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[26]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[27]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[28]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[29]' (FD) to 'zs_3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'zs_3_reg[7]' (FD) to 'B[7]'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[0]' (FD) to 'B[0]__1'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[1]' (FD) to 'B[1]__1'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[2]' (FD) to 'B[2]__1'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[3]' (FD) to 'B[3]__1'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[4]' (FD) to 'B[4]__1'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[5]' (FD) to 'B[5]__1'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[6]' (FD) to 'B[6]__0'
+INFO: [Synth 8-3886] merging instance 'A[0]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[1]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[2]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[3]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[4]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[5]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[6]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[7]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[8]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[9]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[10]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[11]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[12]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[13]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[14]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[15]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[16]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[17]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[18]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[19]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[20]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[21]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[22]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[23]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[24]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[25]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[26]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[27]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[28]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[29]__1' (FD) to 'zs_5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'zs_5_reg[7]' (FD) to 'B[7]__1'
+INFO: [Synth 8-3886] merging instance 'B[0]' (FD) to 'zs_3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'B[1]' (FD) to 'zs_3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'B[2]' (FD) to 'zs_3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'B[3]' (FD) to 'zs_3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'B[4]' (FD) to 'zs_3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'B[5]' (FD) to 'zs_3_reg[5]'
+INFO: [Synth 8-3886] merging instance 'zs_4_reg[6]' (FD) to 'B[6]'
+INFO: [Synth 8-3886] merging instance 'A[0]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[1]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[2]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[3]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[4]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[5]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[6]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[7]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[8]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[9]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[10]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[11]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[12]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[13]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[14]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[15]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[16]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[17]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[18]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[19]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[20]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[21]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Synth 8-3886] merging instance 'A[22]__0' (FD) to 'zs_4_reg[7]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 857 ; free virtual = 2526
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 857 ; free virtual = 2526
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     3|
+|4     |LUT2   |    15|
+|5     |LUT3   |    18|
+|6     |LUT4   |    17|
+|7     |LUT5   |     4|
+|8     |LUT6   |     5|
+|9     |FDRE   |    64|
+|10    |IBUF   |     9|
+|11    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   156|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 856 ; free virtual = 2525
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.562 ; gain = 233.633 ; free physical = 858 ; free virtual = 2527
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1330.570 ; gain = 233.633 ; free physical = 858 ; free virtual = 2527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+117 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1427.574 ; gain = 343.230 ; free physical = 804 ; free virtual = 2472
+INFO: [Common 17-1381] The checkpoint '/home/brad/vivado-projects/chisel_fir8tap/chisel_fir8tap.runs/synth_1/FirFilter.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1451.586 ; gain = 0.000 ; free physical = 805 ; free virtual = 2474
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 23:08:49 2019...
