@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Dec  9 22:10:42 2019
+# Process ID: 29445
+# Current directory: /home/brad/ChiselProjects/chisel-kernel/chisel_cic/chisel_cic.runs/synth_1
+# Command line: vivado -log cic3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cic3.tcl
+# Log file: /home/brad/ChiselProjects/chisel-kernel/chisel_cic/chisel_cic.runs/synth_1/cic3.vds
+# Journal file: /home/brad/ChiselProjects/chisel-kernel/chisel_cic/chisel_cic.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source cic3.tcl -notrace
+Command: synth_design -top cic3 -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29471 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.922 ; gain = 64.996 ; free physical = 1317 ; free virtual = 2982
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cic3' [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:1]
+INFO: [Synth 8-256] done synthesizing module 'cic3' (1#1) [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1328 ; free virtual = 2993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.422 ; gain = 105.496 ; free physical = 1329 ; free virtual = 2994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1210.426 ; gain = 113.500 ; free physical = 1329 ; free virtual = 2994
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:128]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:133]
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:128]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:128]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:133]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:133]
+WARNING: [Synth 8-6014] Unused sequential element integregs_1_real_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:108]
+WARNING: [Synth 8-6014] Unused sequential element integregs_1_imag_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:111]
+WARNING: [Synth 8-6014] Unused sequential element integregs_2_real_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:114]
+WARNING: [Synth 8-6014] Unused sequential element integregs_2_imag_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:117]
+WARNING: [Synth 8-6014] Unused sequential element integregs_3_real_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:120]
+WARNING: [Synth 8-6014] Unused sequential element integregs_3_imag_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:123]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.434 ; gain = 121.508 ; free physical = 1319 ; free virtual = 2984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 2     
+	   3 Input     28 Bit       Adders := 6     
++---Registers : 
+	               28 Bit    Registers := 16    
+	               25 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cic3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 2     
+	   3 Input     28 Bit       Adders := 6     
++---Registers : 
+	               28 Bit    Registers := 16    
+	               25 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:128]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:133]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:128]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:133]
+WARNING: [Synth 8-6014] Unused sequential element integregs_1_real_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:108]
+WARNING: [Synth 8-6014] Unused sequential element integregs_2_real_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:114]
+WARNING: [Synth 8-6014] Unused sequential element integregs_3_real_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:120]
+WARNING: [Synth 8-6014] Unused sequential element integregs_1_imag_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:111]
+WARNING: [Synth 8-6014] Unused sequential element integregs_2_imag_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:117]
+WARNING: [Synth 8-6014] Unused sequential element integregs_3_imag_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/chisel_generated_verilog/cic3.v:123]
+DSP Report: Generating DSP _T_624, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP _T_624.
+DSP Report: operator _T_624 is absorbed into DSP _T_624.
+DSP Report: operator _T_624 is absorbed into DSP _T_624.
+DSP Report: Generating DSP _T_629, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP _T_629.
+DSP Report: operator _T_629 is absorbed into DSP _T_629.
+DSP Report: operator _T_629 is absorbed into DSP _T_629.
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[27]' (FDR) to 'integregs_0_imag_reg[26]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[26]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[15]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[16]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[17]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[18]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[19]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[20]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[21]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[22]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[23]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_imag_reg[24]' (FDR) to 'integregs_0_imag_reg[25]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[27]' (FDR) to 'integregs_0_real_reg[15]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[26]' (FDR) to 'integregs_0_real_reg[15]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[15]' (FDR) to 'integregs_0_real_reg[16]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[16]' (FDR) to 'integregs_0_real_reg[17]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[17]' (FDR) to 'integregs_0_real_reg[18]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[18]' (FDR) to 'integregs_0_real_reg[19]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[19]' (FDR) to 'integregs_0_real_reg[20]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[20]' (FDR) to 'integregs_0_real_reg[21]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[21]' (FDR) to 'integregs_0_real_reg[22]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[22]' (FDR) to 'integregs_0_real_reg[23]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[23]' (FDR) to 'integregs_0_real_reg[24]'
+INFO: [Synth 8-3886] merging instance 'integregs_0_real_reg[24]' (FDR) to 'integregs_0_real_reg[25]'
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[11]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[10]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[9]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[8]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[7]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[6]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[5]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[4]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[3]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[2]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[1]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_real_reg[0]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[11]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[10]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[9]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[8]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[7]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[6]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[5]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[4]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[3]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[2]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[1]) is unused and will be removed from module cic3.
+WARNING: [Synth 8-3332] Sequential element (_T_385_3_imag_reg[0]) is unused and will be removed from module cic3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cic3        | A2*B        | 25     | 11     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|cic3        | A2*B        | 25     | 11     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1168 ; free virtual = 2833
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    98|
+|3     |DSP48E1 |     2|
+|4     |LUT2    |   402|
+|5     |LUT3    |    29|
+|6     |LUT4    |    22|
+|7     |LUT5    |    40|
+|8     |LUT6    |   106|
+|9     |FDRE    |   576|
+|10    |IBUF    |    50|
+|11    |OBUF    |    32|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1359|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1166 ; free virtual = 2831
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.793 ; gain = 248.867 ; free physical = 1168 ; free virtual = 2834
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1345.801 ; gain = 248.867 ; free physical = 1168 ; free virtual = 2834
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cic3' is not ideal for floorplanning, since the cellview 'cic3' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+36 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1434.805 ; gain = 350.465 ; free physical = 1121 ; free virtual = 2786
+INFO: [Common 17-1381] The checkpoint '/home/brad/ChiselProjects/chisel-kernel/chisel_cic/chisel_cic.runs/synth_1/cic3.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1458.816 ; gain = 0.000 ; free physical = 1117 ; free virtual = 2782
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 22:11:12 2019...
