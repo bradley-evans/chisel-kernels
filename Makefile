@@ -1,3 +1,11 @@
+fir-16tap:
+	sbt "runMain _elaborate.ElaborateFir16Tap"
+	@echo Elaborated verilog is at FirFilter.v
+
+fir-8tap:
+	sbt "runMain _elaborate.ElaborateFir8Tap"
+	@echo Elaborated verilog is at FirFilter.v
+
 cic3:
 	sbt "runMain _elaborate.ElaborateCicFilter"
 	@echo Elaborated Verilog is at cic3.v
