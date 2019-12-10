@@ -2,7 +2,7 @@
 
 ## What This Is
 
-These are some very basic compute kernels I developed mostly to experiment with the CHISEL HDL.
+These are some very basic compute kernels I developed and collected mostly to experiment with the CHISEL HDL.
 
 Developed in part to satisfy requirements for CS223, Reconfigurable Computing, as taught in Fall 2019 quarter at the University of California, Riverside.
 
