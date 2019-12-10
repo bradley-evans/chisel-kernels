@@ -1,0 +1,284 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Dec 10 00:25:35 2019
+# Process ID: 7991
+# Current directory: /home/brad/vivado-projects/verilog_fir16tap/verilog_fir16tap.runs/synth_1
+# Command line: vivado -log fir_16tap.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_16tap.tcl
+# Log file: /home/brad/vivado-projects/verilog_fir16tap/verilog_fir16tap.runs/synth_1/fir_16tap.vds
+# Journal file: /home/brad/vivado-projects/verilog_fir16tap/verilog_fir16tap.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fir_16tap.tcl -notrace
+Command: synth_design -top fir_16tap -part xc7a50tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8018 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1161.918 ; gain = 64.996 ; free physical = 975 ; free virtual = 2645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fir_16tap' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/fir_16tap/fir_16tap.v:1]
+INFO: [Synth 8-638] synthesizing module 'DFF' [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/fir_16tap/DFF.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (1#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/fir_16tap/DFF.v:1]
+INFO: [Synth 8-256] done synthesizing module 'fir_16tap' (2#1) [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/fir_16tap/fir_16tap.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.418 ; gain = 105.496 ; free physical = 985 ; free virtual = 2656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.418 ; gain = 105.496 ; free physical = 985 ; free virtual = 2656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a50tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1210.422 ; gain = 113.500 ; free physical = 985 ; free virtual = 2656
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a50tcsg324-1
+WARNING: [Synth 8-6014] Unused sequential element Yout_reg was removed.  [/home/brad/ChiselProjects/chisel-kernel/comparison_kernels/fir_16tap/fir_16tap.v:84]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.430 ; gain = 121.508 ; free physical = 983 ; free virtual = 2654
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+       2 Input     16 Bit       Adders := 11    
++---Registers : 
+                   16 Bit    Registers := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fir_16tap 
+Detailed RTL Component Info : 
++---Adders : 
+       2 Input     16 Bit       Adders := 11    
++---Registers : 
+                   16 Bit    Registers := 1     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+                   16 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[7]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[8]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[9]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[10]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[11]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[12]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[13]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff1/Q_reg[14]' (FD) to 'dff1/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff2/Q_reg[9]' (FD) to 'dff2/Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dff2/Q_reg[10]' (FD) to 'dff2/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dff2/Q_reg[11]' (FD) to 'dff2/Q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dff2/Q_reg[12]' (FD) to 'dff2/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dff2/Q_reg[13]' (FD) to 'dff2/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dff2/Q_reg[14]' (FD) to 'dff2/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff3/Q_reg[10]' (FD) to 'dff3/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dff3/Q_reg[11]' (FD) to 'dff3/Q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dff3/Q_reg[12]' (FD) to 'dff3/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dff3/Q_reg[13]' (FD) to 'dff3/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dff3/Q_reg[14]' (FD) to 'dff3/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff4/Q_reg[11]' (FD) to 'dff4/Q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dff4/Q_reg[12]' (FD) to 'dff4/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dff4/Q_reg[13]' (FD) to 'dff4/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dff4/Q_reg[14]' (FD) to 'dff4/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff5/Q_reg[12]' (FD) to 'dff5/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dff5/Q_reg[13]' (FD) to 'dff5/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dff5/Q_reg[14]' (FD) to 'dff5/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff6/Q_reg[13]' (FD) to 'dff6/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dff6/Q_reg[14]' (FD) to 'dff6/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dff7/Q_reg[14]' (FD) to 'dff7/Q_reg[15]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 838 ; free virtual = 2509
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 837 ; free virtual = 2508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    60|
+|3     |LUT1   |    16|
+|4     |LUT2   |   201|
+|5     |LUT3   |     6|
+|6     |LUT4   |     8|
+|7     |LUT5   |     2|
+|8     |LUT6   |     4|
+|9     |FDRE   |   227|
+|10    |IBUF   |     9|
+|11    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   550|
+|2     |  dff1   |DFF    |    20|
+|3     |  dff10  |DFF_0  |    37|
+|4     |  dff11  |DFF_1  |    37|
+|5     |  dff12  |DFF_2  |    36|
+|6     |  dff13  |DFF_3  |    37|
+|7     |  dff14  |DFF_4  |    36|
+|8     |  dff15  |DFF_5  |    39|
+|9     |  dff2   |DFF_6  |    24|
+|10    |  dff3   |DFF_7  |    26|
+|11    |  dff4   |DFF_8  |    29|
+|12    |  dff5   |DFF_9  |    31|
+|13    |  dff6   |DFF_10 |    33|
+|14    |  dff7   |DFF_11 |    35|
+|15    |  dff8   |DFF_12 |    37|
+|16    |  dff9   |DFF_13 |    37|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 836 ; free virtual = 2507
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.555 ; gain = 232.633 ; free physical = 839 ; free virtual = 2510
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1329.562 ; gain = 232.633 ; free physical = 839 ; free virtual = 2510
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+41 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1403.555 ; gain = 319.219 ; free physical = 783 ; free virtual = 2454
+INFO: [Common 17-1381] The checkpoint '/home/brad/vivado-projects/verilog_fir16tap/verilog_fir16tap.runs/synth_1/fir_16tap.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1427.566 ; gain = 0.000 ; free physical = 784 ; free virtual = 2455
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 10 00:26:02 2019...
+s
