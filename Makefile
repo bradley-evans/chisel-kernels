@@ -1,3 +1,7 @@
+cic3:
+	sbt "runMain _elaborate.ElaborateCicFilter"
+	@echo Elaborated Verilog is at cic3.v
+
 fir-4tap: SHELL:=/bin/bash
 fir-4tap:
 	sbt "runMain _elaborate.ElaborateFir4Tap"
