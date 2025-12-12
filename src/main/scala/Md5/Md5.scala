@@ -71,12 +71,12 @@ class Md5(bitWidth: Int) extends Module {
     // Calculate padding: message + '1' bit + '0' bits + 64-bit length
     val msgBits = msgLen
     val paddingBits = ((448 - (msgBits + 1) % 512) + 512) % 512
-    val totalBits = msgBits + 1 + paddingBits + 64
     
     // Original message length as 64-bit little-endian
     val lengthBits = msgLen.U(64.W)
     
-    // Build padded message: length (64 bits) | zeros | 1 bit | message
+    // Build padded message: message | 1 bit | zeros | length (64 bits)
+    // Note: Cat constructs from MSB to LSB, so we list them in reverse order
     val padBit = 1.U(1.W)
     
     val padded = if (msgLen > 0 && paddingBits > 0) {
@@ -153,9 +153,15 @@ class Md5(bitWidth: Int) extends Module {
   }
 
   // Main MD5 computation
-  val paddedMsg = padMessage(io.in, bitWidth)
-  val paddedBits = ((bitWidth + 1 + ((448 - (bitWidth + 1) % 512) + 512) % 512 + 64))
+  // Calculate padded message size
+  val paddingBits = ((448 - (bitWidth + 1) % 512) + 512) % 512
+  val paddedBits = bitWidth + 1 + paddingBits + 64
   val numBlocks = paddedBits / 512
+  
+  // Ensure we always have at least 1 block (MD5 always processes at least one 512-bit block)
+  require(numBlocks >= 1, "MD5 must process at least one block")
+  
+  val paddedMsg = padMessage(io.in, bitWidth)
   
   // Process blocks sequentially (unrolled at elaboration time)
   val buffers = Wire(Vec(numBlocks + 1, Vec(4, UInt(32.W))))
